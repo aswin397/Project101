@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="login" method="post">
+
+        {% csrf_token %}
+        <input type="text" name='username' placeholder="Enter the Username"><br>
+        <input type="text" name='password' placeholder="Enter your Password"><br>
+        <input type="submit" value="Log In">
+        
+    </form>
+    {% for msg in messages %} <!--message must be iterated to show in website-->
+
+    <h2> {{ msg }} </h2>
+
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Css</title>
+
+    <style>
+        table,th,td{
+
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td,th{
+
+            text-align: center;
+            padding: 10px;
+        }
+
+        caption{
+            color: red;
+            font-size: large;
+            font-style: italic;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Hello {{obj}}</h2>
+    <table style="width: 100%;">
+        <caption>Aswin</caption>
+
+        <tr>
+            <th>Subjects</th>
+            <th colspan="2">Marks</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr>
+            <td>Data Analytics</td>
+            <td>100</td>
+            <td>99</td>
+            <td>A+</td>
+        </tr>
+
+    </table>
+     <form action="results/" method="get">  <!--This results keyword allow url to access when hit submit-->
+          <input type="text" name="num1" placeholder="number 1">
+          <input type="text" name="num2" placeholder="number 2">
+          <input type="submit">
+
+        </form>
+ 
+</body>
+</html>
